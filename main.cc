@@ -20,7 +20,7 @@ int main(){
     BookInput.open("Books.txt");
 
     while(getline(BookInput, title, ',')){
-        
+        BookInput.ignore(1);
         getline(BookInput, author, ',');
         BookInput.ignore(1);
         getline(BookInput, year);
