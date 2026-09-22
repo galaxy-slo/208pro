@@ -42,24 +42,15 @@ int main(){
 
 
 
+    while(counter >= 0){
+        Books[counter].PrintBooks();
+        counter--;
+    }
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+return 0;
 
 
 
