@@ -11,21 +11,17 @@ int main(){
 
     Book Books[100];
     int counter = 0;
-    string line;
+    string title;
+    string author;
+    string year;
 
     ifstream BookInput;
     BookInput.open("Books.txt");
 
-    while(getline(BookInput, line)){
-        string title;
-        string author;
-        string year;
-
-        getline(BookInput, title, ',');
+    while(getline(BookInput, title, ',')){
+        
         getline(BookInput, author, ',');
         getline(BookInput, year);
-        
-        
         
         
         Books[counter].SetTitle(title);
@@ -35,14 +31,11 @@ int main(){
         counter++;
 
 
-
-
-
     }
 
 
 
-    while(counter >= 0){
+    while(counter - 1 >= 0){
         Books[counter].PrintBooks();
         counter--;
     }
