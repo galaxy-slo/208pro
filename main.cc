@@ -35,7 +35,7 @@ int main(){
 
 
 
-    while(counter - 1 > 0){
+    while(counter > 0){
         counter--;
         Books[counter].PrintBooks();
         
