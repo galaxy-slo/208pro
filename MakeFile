@@ -1,0 +1,21 @@
+
+all: Books.exe
+
+
+
+Books.exe: main.o Book.o
+	g++ main.o Book.o -o Books.exe
+
+main.o: main.cc Book.h
+	g++ -c main.cc
+
+Book.o: Book.cc Book.h
+	g++ -c Book.cc
+
+clean:
+	 rm -f Team.o main.o Books.exe
+
+clean win:
+	del Team.o
+	del Main.o
+	del Books.exe
