@@ -1,7 +1,6 @@
 #include <iostream>
 #include <string>
 #include "Book.h"
-#include "main.cc"
 using namespace std;
 
 
