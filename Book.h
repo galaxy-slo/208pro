@@ -8,7 +8,7 @@ class Book{
     public:
         void SetTitle(string InTitle);
         void SetAuthor(string InAuthor);
-        void SetYear(int InYear);
+        void SetYear(string InYear);
 
         void PrintBooks();
 
@@ -20,7 +20,7 @@ class Book{
     private:
         string title;
         string author;
-        int year;
+        string year;
 
 
 

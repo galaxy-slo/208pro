@@ -2,6 +2,7 @@
 #include <string>
 #include <fstream> 
 #include "Book.h"
+
 using namespace std;
 
 
@@ -9,23 +10,29 @@ using namespace std;
 int main(){
 
     Book Books[100];
-    int counter;
+    int counter = 0;
     string line;
 
     ifstream BookInput;
     BookInput.open("Books.txt");
 
     while(getline(BookInput, line)){
-        string line;
+        string title;
         string author;
-        int year;
+        string year;
 
-            
-            void SetTitle(line);
+        getline(BookInput, title, ',');
+        getline(BookInput, author, ',');
+        getline(BookInput, year);
+        
+        
+        
+        
+        Books[counter].SetTitle(title);
+        Books[counter].SetAuthor(author);
+        Books[counter].SetYear(year);
 
-            void SetAuthor(line);
-
-            void SetYear(line);
+        counter++;
 
 
 

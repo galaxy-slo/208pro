@@ -7,14 +7,14 @@ using namespace std;
 
 
 void Book::SetTitle(string InTitle){
-    title = getline(BookInput, )
+    title = InTitle;
 }
 
 void Book::SetAuthor(string InAuthor){
     author = InAuthor;
 }
 
-void Book::SetYear(int InYear){
+void Book::SetYear(string InYear){
     year = InYear;
 }
 
