@@ -22,7 +22,7 @@ int main(){
     while(getline(BookInput, title, ',')){
         
         getline(BookInput, author, ',');
-        BookInput >> ws;
+        BookInput.ignore(1);
         getline(BookInput, year);
         
         
