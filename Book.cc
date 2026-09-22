@@ -18,6 +18,6 @@ void Book::SetYear(string InYear){
 }
 
 void Book::PrintBooks(){
-    cout << author << ", " << "\"" << title << "\"" << "(" << year << ")" << endl;
+    cout << author << ", " << "\"" << title << "\" (" << year << ")" << endl;
 
 }
