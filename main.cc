@@ -14,6 +14,7 @@ int main(){
     string title;
     string author;
     string year;
+    string ws;
 
     ifstream BookInput;
     BookInput.open("Books.txt");
@@ -26,6 +27,7 @@ int main(){
         
         Books[counter].SetTitle(title);
         Books[counter].SetAuthor(author);
+        BookInput >> ws;
         Books[counter].SetYear(year);
 
         counter++;
