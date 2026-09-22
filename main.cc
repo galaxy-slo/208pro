@@ -22,12 +22,12 @@ int main(){
     while(getline(BookInput, title, ',')){
         
         getline(BookInput, author, ',');
+        BookInput >> ws;
         getline(BookInput, year);
         
         
         Books[counter].SetTitle(title);
         Books[counter].SetAuthor(author);
-        BookInput >> ws;
         Books[counter].SetYear(year);
 
         counter++;
